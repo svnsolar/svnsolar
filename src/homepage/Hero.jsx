@@ -18,11 +18,11 @@ const Hero = () => {
           <Navbar />
           <div className="text-white px-6 py-16 sm:px-12 md:px-20 lg:px-32 text-center space-y-6">
             <p className="text-sm text-yellow-400 font-medium tracking-wider uppercase">
-              Welcome to Revolux
+              Welcome to Svnsolar
             </p>
 
-            <h1 className="text-7xl font-semibold  leading-tight">
-              Clean energy solutions for a better planet
+            <h1 className="text-7xl font-thin  leading-tight">
+              Clean energy solutions for a <br />better planet
             </h1>
 
             <p className="text-white max-w-2xl mx-auto text-base sm:text-lg">
@@ -78,20 +78,24 @@ const Hero = () => {
 
                 {/* Description */}
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  More than 900,000 households rely on Revolux solar systems.
+                  More than 900,000 households rely on Svnsolar systems.
                   They’re switching to renewable energy and loving the results.
                 </p>
               </div>
 
               {/* Right Section (Image) */}
               <div className="flex-1 relative ">
-                <video
-                  className="w-full h-auto rounded-tl-xl rounded-tr-xl object-cover"
-                autoPlay
-                >
-                  <source src={video} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+            <video
+  className="w-full h-auto rounded-tl-xl rounded-tr-xl object-cover"
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source src={video} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 
                 <div className="absolute bottom-4  right-0 flex justify-between items-center px-4">
                   
