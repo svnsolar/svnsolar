@@ -1,0 +1,59 @@
+import React, { useState } from "react";
+
+
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleToggle = () => setIsOpen(!isOpen);
+    // Tailwind CSS classes can be used in the JSX below.
+    return (
+        <nav className="relative bg-white shadow-md">
+            <div className="container mx-auto flex items-center justify-between px-4 py-3">
+                <div className="text-2xl font-bold text-blue-700">SVN Solar</div>
+                <button
+                    className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none"
+                    onClick={handleToggle}
+                    aria-label="Toggle Menu"
+                >
+                    <span className={`block h-1 w-6 bg-blue-700 mb-1 transition-all duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`}></span>
+                    <span className={`block h-1 w-6 bg-blue-700 mb-1 transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
+                    <span className={`block h-1 w-6 bg-blue-700 transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
+                </button>
+                <ul className="hidden md:flex space-x-8">
+                    <li><a href="/" className="text-gray-700 hover:text-blue-700 font-medium">Home</a></li>
+                    <li><a href="/about" className="text-gray-700 hover:text-blue-700 font-medium">About</a></li>
+                    <li><a href="/projects" className="text-gray-700 hover:text-blue-700 font-medium">Projects</a></li>
+                    <li><a href="/contact" className="text-gray-700 hover:text-blue-700 font-medium">Contact</a></li>
+                </ul>
+            </div>
+            {/* Mobile Menu */}
+            <ul
+                className={`fixed top-0 left-0 w-2/3 max-w-xs h-full bg-white shadow-lg z-40 transform transition-transform duration-300 ease-in-out md:hidden ${
+                    isOpen ? "translate-x-0" : "-translate-x-full"
+                }`}
+            >
+                <li className="border-b">
+                    <a href="/" className="block px-6 py-4 text-gray-700 hover:text-blue-700 font-medium" onClick={handleToggle}>Home</a>
+                </li>
+                <li className="border-b">
+                    <a href="/about" className="block px-6 py-4 text-gray-700 hover:text-blue-700 font-medium" onClick={handleToggle}>About</a>
+                </li>
+                <li className="border-b">
+                    <a href="/projects" className="block px-6 py-4 text-gray-700 hover:text-blue-700 font-medium" onClick={handleToggle}>Projects</a>
+                </li>
+                <li>
+                    <a href="/contact" className="block px-6 py-4 text-gray-700 hover:text-blue-700 font-medium" onClick={handleToggle}>Contact</a>
+                </li>
+            </ul>
+            {/* Backdrop */}
+            {isOpen && (
+                <div
+                    className="fixed inset-0 bg-black bg-opacity-40 z-30 md:hidden"
+                    onClick={handleToggle}
+                ></div>
+            )}
+        </nav>
+    );
+};
+
+export default Navbar;
