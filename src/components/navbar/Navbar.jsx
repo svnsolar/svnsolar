@@ -7,9 +7,9 @@ const Navbar = () => {
     const handleToggle = () => setIsOpen(!isOpen);
     // Tailwind CSS classes can be used in the JSX below.
     return (
-        <nav className="relative bg-white shadow-md">
-            <div className="container mx-auto flex items-center justify-between px-4 py-3">
-                <div className="text-2xl font-bold text-blue-700">SVN Solar</div>
+        <nav className="relative w-full">
+            <div className="container flex items-center justify-between px-4 py-3 ">
+                <div className="text-2xl font-bold text-white">SVN Solar</div>
                 <button
                     className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none"
                     onClick={handleToggle}
@@ -20,11 +20,12 @@ const Navbar = () => {
                     <span className={`block h-1 w-6 bg-blue-700 transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
                 </button>
                 <ul className="hidden md:flex space-x-8">
-                    <li><a href="/" className="text-gray-700 hover:text-blue-700 font-medium">Home</a></li>
-                    <li><a href="/about" className="text-gray-700 hover:text-blue-700 font-medium">About</a></li>
-                    <li><a href="/projects" className="text-gray-700 hover:text-blue-700 font-medium">Projects</a></li>
-                    <li><a href="/contact" className="text-gray-700 hover:text-blue-700 font-medium">Contact</a></li>
+                    <li><a href="/" className="text-white hover:text-blue-700 font-medium">Home</a></li>
+                    <li><a href="/about" className="text-white hover:text-blue-700 font-medium">About</a></li>
+                    <li><a href="/projects" className="text-white hover:text-blue-700 font-medium">Projects</a></li>
+                    <li><a href="/contact" className="text-white hover:text-blue-700 font-medium">Contact</a></li>
                 </ul>
+                <a href="/contact" className="text-gray-800 bg-yellow-400 font-medium p-2 px-8 rounded-lg">Talk To Us</a>
             </div>
             {/* Mobile Menu */}
             <ul
@@ -33,16 +34,16 @@ const Navbar = () => {
                 }`}
             >
                 <li className="border-b">
-                    <a href="/" className="block px-6 py-4 text-gray-700 hover:text-blue-700 font-medium" onClick={handleToggle}>Home</a>
+                    <a href="/" className="block px-6 py-4 text-white hover:text-blue-700 font-medium" onClick={handleToggle}>Home</a>
                 </li>
                 <li className="border-b">
-                    <a href="/about" className="block px-6 py-4 text-gray-700 hover:text-blue-700 font-medium" onClick={handleToggle}>About</a>
+                    <a href="/about" className="block px-6 py-4 text-white hover:text-blue-700 font-medium" onClick={handleToggle}>About</a>
                 </li>
                 <li className="border-b">
-                    <a href="/projects" className="block px-6 py-4 text-gray-700 hover:text-blue-700 font-medium" onClick={handleToggle}>Projects</a>
+                    <a href="/projects" className="block px-6 py-4 text-white hover:text-blue-700 font-medium" onClick={handleToggle}>Projects</a>
                 </li>
                 <li>
-                    <a href="/contact" className="block px-6 py-4 text-gray-700 hover:text-blue-700 font-medium" onClick={handleToggle}>Contact</a>
+                    <a href="/contact" className="block px-6 py-4 text-white hover:text-blue-700 font-medium" onClick={handleToggle}>Contact</a>
                 </li>
             </ul>
             {/* Backdrop */}
