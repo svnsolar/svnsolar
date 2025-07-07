@@ -42,8 +42,11 @@ const Hero = () => {
           </div>
         </div>
         <div className="absolute bottom-0 w-full flex  justify-center items-center">
-          <div className="w-[50rem] h-[19rem]  rounded-tr-3xl rounded-tl-3xl border-t-8 border-white border-x-8 bg-white">
-            <div className="flex h-full flex-col md:flex-row items-center justify-between bg-gradient-to-r from-gray-200 to-gray-300 rounded-tr-3xl rounded-tl-3xl p-6 md:p-10 gap-6 shadow-md max-w-5xl mx-auto">
+          <div className="w-[50rem] h-[19rem]  rounded-tr-3xl rounded-tl-3xl border-t-8
+           border-white border-x-8 bg-white">
+            <div className="flex h-full flex-col md:flex-row items-center justify-between 
+            bg-gray-300 rounded-tr-3xl rounded-tl-3xl 
+            p-6 md:p-10 gap-6 shadow-md max-w-5xl mx-auto">
               {/* Left Section */}
               <div className="flex-1 space-y-4">
                 {/* Avatars */}
