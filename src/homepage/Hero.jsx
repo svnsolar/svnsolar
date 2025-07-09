@@ -1,12 +1,12 @@
 import React from "react";
-import hero from "../assets/homepage/hero/hero1.jpg";
-import Navbar from "../components/navbar/Navbar";
-import video from "../assets/homepage/hero/svnsolar-video.mp4";
+import hero from "../assets/hero/hero1.jpg";
+import Navbar from "../components/Navbar";
+import video from "../assets/hero/svnsolar-video.mp4";
 
 const Hero = () => {
   return (
     <section className="flex  justify-center items-center w-full">
-      <div className=" w-full m-4 relative max-w-[1600px]">
+      <div className=" w-full m-4 relative max-w-[1500px]">
         <img
           src={hero}
           alt="Solar panels on roof"
@@ -14,7 +14,6 @@ const Hero = () => {
         />
         <div className="bg-black/50 absolute w-full h-full rounded-xl top-0"></div>
         <div className="absolute top-0 w-full">
-            
           <Navbar />
           <div className="text-white px-6 py-16 sm:px-12 md:px-20 lg:px-32 text-center space-y-6">
             <p className="text-sm text-yellow-400 font-medium tracking-wider uppercase">
@@ -22,7 +21,8 @@ const Hero = () => {
             </p>
 
             <h1 className="text-7xl font-thin  leading-tight">
-              Clean energy solutions for a <br />better planet
+              Clean energy solutions for a <br />
+              better planet
             </h1>
 
             <p className="text-white max-w-2xl mx-auto text-base sm:text-lg">
@@ -42,11 +42,15 @@ const Hero = () => {
           </div>
         </div>
         <div className="absolute bottom-0 w-full flex  justify-center items-center">
-          <div className="w-[50rem] h-[19rem]  rounded-tr-3xl rounded-tl-3xl border-t-8
-           border-white border-x-8 bg-white">
-            <div className="flex h-full flex-col md:flex-row items-center justify-between 
+          <div
+            className="w-[50rem] h-[19rem]  rounded-tr-3xl rounded-tl-3xl border-t-8
+           border-white border-x-8 bg-white"
+          >
+            <div
+              className="flex h-full flex-col md:flex-row items-center justify-between 
             bg-gray-300 rounded-tr-3xl rounded-tl-3xl 
-            p-6 md:p-10 gap-6 shadow-md max-w-5xl mx-auto">
+            p-6 md:p-10 gap-6 shadow-md max-w-5xl mx-auto"
+            >
               {/* Left Section */}
               <div className="flex-1 space-y-4">
                 {/* Avatars */}
@@ -81,27 +85,25 @@ const Hero = () => {
 
                 {/* Description */}
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  More than 900,000 households rely on Svnsolar systems.
-                  They’re switching to renewable energy and loving the results.
+                  More than 900,000 households rely on Svnsolar systems. They’re
+                  switching to renewable energy and loving the results.
                 </p>
               </div>
 
               {/* Right Section (Image) */}
               <div className="flex-1 relative ">
-            <video
-  className="w-full h-auto rounded-tl-xl rounded-tr-xl object-cover"
-  autoPlay
-  muted
-  loop
-  playsInline
->
-  <source src={video} type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
+                <video
+                  className="w-full h-auto rounded-tl-xl rounded-tr-xl object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src={video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
 
                 <div className="absolute bottom-4  right-0 flex justify-between items-center px-4">
-                  
                   <span className="text-white font-semibold text-sm text-right">
                     SVN Solar
                   </span>
