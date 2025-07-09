@@ -1,7 +1,7 @@
 import React from "react";
 import hero from "../assets/hero/hero1.jpg";
 import Navbar from "../components/Navbar";
-import video from "../assets/hero/svnsolar-video.mp4";
+
 
 const Hero = () => {
   return (
@@ -93,13 +93,13 @@ const Hero = () => {
               {/* Right Section (Image) */}
               <div className="flex-1 relative ">
                 <video
-                  className="w-full h-auto rounded-tl-xl rounded-tr-xl object-cover"
+                  className="w-full h-auto rounded-xl object-cover"
                   autoPlay
                   muted
                   loop
                   playsInline
                 >
-                  <source src={video} type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dbntgufdq/video/upload/v1752064417/svnsolar-video_uwdg9k.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
 
