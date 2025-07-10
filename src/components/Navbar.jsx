@@ -15,9 +15,9 @@ const Navbar = () => {
                     onClick={handleToggle}
                     aria-label="Toggle Menu"
                 >
-                    <span className={`block h-1 w-6 bg-blue-700 mb-1 transition-all duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`}></span>
-                    <span className={`block h-1 w-6 bg-blue-700 mb-1 transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
-                    <span className={`block h-1 w-6 bg-blue-700 transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
+                    <span className={`block h-1 w-6 bg-white mb-1 transition-all duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`}></span>
+                    <span className={`block h-1 w-6 bg-white mb-1 transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
+                    <span className={`block h-1 w-6 bg-white transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
                 </button>
                 <ul className="hidden md:flex space-x-8">
                     <li><a href="/" className="text-white hover:text-blue-700 font-medium">Home</a></li>
@@ -25,7 +25,7 @@ const Navbar = () => {
                     <li><a href="/projects" className="text-white hover:text-blue-700 font-medium">Projects</a></li>
                     <li><a href="/contact" className="text-white hover:text-blue-700 font-medium">Contact</a></li>
                 </ul>
-                <a href="/contact" className="text-gray-800 bg-yellow-400 font-medium p-2 px-8 rounded-lg">Talk To Us</a>
+                <a href="/contact" className="text-gray-800 max-lg:hidden bg-yellow-400 font-medium p-2 px-8 rounded-lg">Talk To Us</a>
             </div>
             {/* Mobile Menu */}
             <ul
@@ -34,16 +34,16 @@ const Navbar = () => {
                 }`}
             >
                 <li className="border-b">
-                    <a href="/" className="block px-6 py-4 text-white hover:text-blue-700 font-medium" onClick={handleToggle}>Home</a>
+                    <a href="/" className="block px-6 py-4 text-black hover:text-blue-700 font-medium" onClick={handleToggle}>Home</a>
                 </li>
                 <li className="border-b">
-                    <a href="/about" className="block px-6 py-4 text-white hover:text-blue-700 font-medium" onClick={handleToggle}>About</a>
+                    <a href="/about" className="block px-6 py-4 text-black hover:text-blue-700 font-medium" onClick={handleToggle}>About</a>
                 </li>
                 <li className="border-b">
-                    <a href="/projects" className="block px-6 py-4 text-white hover:text-blue-700 font-medium" onClick={handleToggle}>Projects</a>
+                    <a href="/projects" className="block px-6 py-4 text-black hover:text-blue-700 font-medium" onClick={handleToggle}>Projects</a>
                 </li>
                 <li>
-                    <a href="/contact" className="block px-6 py-4 text-white hover:text-blue-700 font-medium" onClick={handleToggle}>Contact</a>
+                    <a href="/contact" className="block px-6 py-4 text-black hover:text-blue-700 font-medium" onClick={handleToggle}>Contact</a>
                 </li>
             </ul>
             {/* Backdrop */}

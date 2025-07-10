@@ -2,7 +2,6 @@ import React from "react";
 import hero from "../assets/hero/hero1.jpg";
 import Navbar from "../components/Navbar";
 
-
 const Hero = () => {
   return (
     <section className="flex  justify-center items-center w-full">
@@ -12,7 +11,7 @@ const Hero = () => {
           alt="Solar panels on roof"
           className="w-full rounded-xl max-lg:rounded-none max-lg:object-cover max-lg:h-full"
         />
-        <div className="bg-black/50 absolute w-full h-full rounded-xl max-lg:rounded-none top-0"></div>
+        <div className="bg-black/50 max-lg:bg-black/40 absolute w-full h-full rounded-xl max-lg:rounded-none top-0"></div>
         <div className="absolute top-0 w-full">
           <Navbar />
           <div className="text-white px-6 py-16 sm:px-12 md:px-20 lg:px-32 text-center space-y-6">
@@ -20,15 +19,17 @@ const Hero = () => {
               Welcome to Svnsolar
             </p>
 
-            <h1 className="text-5xl font-thin  leading-tight">
+            <h1 className="text-7xl max-lg:text-5xl font-thin  leading-tight">
               Clean energy solutions for a <br />
               better planet
             </h1>
 
             <p className="text-white max-w-2xl mx-auto text-base sm:text-lg">
-              At Svnsolar, we deliver smart solar technology that supports both
-              your lifestyle and the environment. Let’s create a more
-              sustainable world together.
+              VN Solar began its journey with a simple vision: to harness the
+              power of the sun to create a sustainable and greener future.
+              Founded in 2015 by a team of passionate environmental enthusiasts
+              and renewable energy experts, our mission is to make solar energy
+              accessible and affordable for everyone.
             </p>
 
             <div className="flex max-lg:pb-5 flex-col sm:flex-row justify-center gap-4 pt-4 ">
@@ -39,8 +40,8 @@ const Hero = () => {
                 Explore More
               </button>
             </div>
-            
-            <video
+
+            {/* <video
                   className="w-full max-md:block hidden h-auto rounded-xl object-cover"
                   autoPlay
                   muted
@@ -49,12 +50,12 @@ const Hero = () => {
                 >
                   <source src="https://res.cloudinary.com/dbntgufdq/video/upload/v1752064417/svnsolar-video_uwdg9k.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
-                </video>
+                </video> */}
           </div>
         </div>
         <div className="absolute bottom-0 w-full flex max-lg:hidden  justify-center items-center">
           <div
-            className="w-[50rem] h-[19rem]  rounded-tr-3xl rounded-tl-3xl border-t-8
+            className="w-[50rem] h-[17rem]  rounded-tr-3xl rounded-tl-3xl border-t-8
            border-white border-x-8 bg-white"
           >
             <div
@@ -110,7 +111,10 @@ const Hero = () => {
                   loop
                   playsInline
                 >
-                  <source src="https://res.cloudinary.com/dbntgufdq/video/upload/v1752064417/svnsolar-video_uwdg9k.mp4" type="video/mp4" />
+                  <source
+                    src="https://res.cloudinary.com/dbntgufdq/video/upload/v1752064417/svnsolar-video_uwdg9k.mp4"
+                    type="video/mp4"
+                  />
                   Your browser does not support the video tag.
                 </video>
 

@@ -10,7 +10,7 @@ export default function About() {
           <img
             src={about2}
             alt="Solar workers installing panels"
-            className="rounded-xl object-cover  w-full h-full bg-red-500"
+            className="rounded-xl object-cover  w-full h-full "
           />
         </div>
 
@@ -65,7 +65,7 @@ export default function About() {
           <img
             src={about1}
             alt="Wind turbines and solar panels"
-            className="rounded-xl object-cover w-full h-full bg-red-500"
+            className="rounded-xl object-cover w-full h-full "
           />
         </div>
       </div>
