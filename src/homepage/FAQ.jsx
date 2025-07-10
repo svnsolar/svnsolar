@@ -88,7 +88,7 @@ const FaqSection = () => {
         <div>
           <p className="uppercase text-green-700 font-semibold mb-2">Get Informed</p>
           <h2 className="text-4xl font-bold text-gray-900 leading-tight mb-4">
-            Everything you need to <br /> know about green power
+            Everything you need to <br className="block max-lg:hidden"/> know about green power
           </h2>
           <p className="text-gray-600 mb-6">
             Learn about our energy solutions and how to start. We’ve gathered the top

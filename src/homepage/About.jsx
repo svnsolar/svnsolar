@@ -6,11 +6,11 @@ export default function About() {
   return (
     <section className="py-16 px-4 md:px-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="flex flex-col w-full max-w-[1200px] md:flex-row gap-6 items-start justify-center mx-auto">
-        <div className="relative h-[34rem] w-full md:w-[25rem] transition-transform duration-300 hover:scale-105">
+        <div className="relative h-[34rem] max-lg:hidden w-full md:w-[25rem] transition-transform duration-300 hover:scale-105">
           <img
             src={about2}
             alt="Solar workers installing panels"
-            className="rounded-xl object-cover w-full h-full bg-red-500"
+            className="rounded-xl object-cover  w-full h-full bg-red-500"
           />
         </div>
 
@@ -34,7 +34,8 @@ export default function About() {
               Learn More
             </button>
           </div>
-          <div className="flex flex-col bg-white z-50 rounded-t-2xl h-[12rem] md:flex-row gap-6 mt-8 md:mt-0 md:absolute 
+          <div className="flex flex-col bg-white z-50 rounded-t-2xl h-[12rem] max-lg:h-full
+           md:flex-row gap-6 mt-8 md:mt-0 max-lg:relative absolute 
           md:-bottom-[15.2rem] w-full md:w-[50rem] ">
             <div className="p-6 rounded-xl flex-1 transition-transform duration-300 hover:-translate-y-2">
               <h3 className="text-3xl font-bold text-orange-500">23+</h3>
@@ -60,7 +61,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="relative h-[34rem] w-full md:w-[25rem] transition-transform duration-300 hover:scale-105">
+        <div className="relative h-[34rem] max-lg:hidden w-full md:w-[25rem] transition-transform duration-300 hover:scale-105">
           <img
             src={about1}
             alt="Wind turbines and solar panels"

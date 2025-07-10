@@ -6,13 +6,13 @@ import Navbar from "../components/Navbar";
 const Hero = () => {
   return (
     <section className="flex  justify-center items-center w-full">
-      <div className=" w-full m-4 relative max-w-[1500px]">
+      <div className=" w-full m-4 max-lg:m-0 max-xl:h-screen relative max-w-[1500px]">
         <img
           src={hero}
           alt="Solar panels on roof"
-          className="w-full rounded-xl"
+          className="w-full rounded-xl max-lg:rounded-none max-lg:object-cover max-lg:h-full"
         />
-        <div className="bg-black/50 absolute w-full h-full rounded-xl top-0"></div>
+        <div className="bg-black/50 absolute w-full h-full rounded-xl max-lg:rounded-none top-0"></div>
         <div className="absolute top-0 w-full">
           <Navbar />
           <div className="text-white px-6 py-16 sm:px-12 md:px-20 lg:px-32 text-center space-y-6">
@@ -20,7 +20,7 @@ const Hero = () => {
               Welcome to Svnsolar
             </p>
 
-            <h1 className="text-7xl font-thin  leading-tight">
+            <h1 className="text-5xl font-thin  leading-tight">
               Clean energy solutions for a <br />
               better planet
             </h1>
@@ -31,7 +31,7 @@ const Hero = () => {
               sustainable world together.
             </p>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+            <div className="flex max-lg:pb-5 flex-col sm:flex-row justify-center gap-4 pt-4 ">
               <button className="px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full transition-all duration-300 shadow-md">
                 Request Quote
               </button>
@@ -39,9 +39,20 @@ const Hero = () => {
                 Explore More
               </button>
             </div>
+            
+            <video
+                  className="w-full max-md:block hidden h-auto rounded-xl object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="https://res.cloudinary.com/dbntgufdq/video/upload/v1752064417/svnsolar-video_uwdg9k.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
           </div>
         </div>
-        <div className="absolute bottom-0 w-full flex  justify-center items-center">
+        <div className="absolute bottom-0 w-full flex max-lg:hidden  justify-center items-center">
           <div
             className="w-[50rem] h-[19rem]  rounded-tr-3xl rounded-tl-3xl border-t-8
            border-white border-x-8 bg-white"
@@ -52,7 +63,7 @@ const Hero = () => {
             p-6 md:p-10 gap-6 shadow-md max-w-5xl mx-auto"
             >
               {/* Left Section */}
-              <div className="flex-1 space-y-4">
+              <div className="flex-1 space-y-4 ">
                 {/* Avatars */}
                 <div className="flex -space-x-3">
                   <img
