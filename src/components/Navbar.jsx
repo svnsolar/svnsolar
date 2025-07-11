@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import logo from "../assets/components/navbar/SVN LOGO ( FOR PRINTING ).png"
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,17 +7,17 @@ const Navbar = () => {
     const handleToggle = () => setIsOpen(!isOpen);
     // Tailwind CSS classes can be used in the JSX below.
     return (
-        <nav className="relative w-full">
+        <nav className="relative w-full max-lg:bg-white">
             <div className="container flex items-center justify-between px-4 py-3 ">
-                <div className="text-2xl font-bold text-white">SVN Solar</div>
+                <img src={logo} alt="" className="w-[10rem]" />
                 <button
                     className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none"
                     onClick={handleToggle}
                     aria-label="Toggle Menu"
                 >
-                    <span className={`block h-1 w-6 bg-white mb-1 transition-all duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`}></span>
-                    <span className={`block h-1 w-6 bg-white mb-1 transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
-                    <span className={`block h-1 w-6 bg-white transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
+                    <span className={`block h-[2px] w-6 bg-black mb-2 rounded-xl transition-all duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`}></span>
+                    <span className={`block h-[2px] w-6 bg-black mb-2 rounded-xl transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}></span>
+                    <span className={`block h-[2px] w-6 bg-black rounded-xl transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
                 </button>
                 <ul className="hidden md:flex space-x-8">
                     <li><a href="/" className="text-white hover:text-blue-700 font-medium">Home</a></li>

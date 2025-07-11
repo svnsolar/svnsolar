@@ -25,7 +25,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-white max-w-2xl mx-auto text-base sm:text-lg">
-              VN Solar began its journey with a simple vision: to harness the
+              SVN Solar began its journey with a simple vision: to harness the
               power of the sun to create a sustainable and greener future.
               Founded in 2015 by a team of passionate environmental enthusiasts
               and renewable energy experts, our mission is to make solar energy
