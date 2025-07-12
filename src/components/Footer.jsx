@@ -11,16 +11,16 @@ const Footer = () => {
   return (
     <footer className="bg-blue-950 text-white py-12 px-6 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-
         {/* Column 1 - Logo and About */}
         <div>
           <h2 className="text-2xl font-bold mb-3">SVN Solar</h2>
           <p className="text-sm text-gray-300 mb-4">
-            What began as a simple idea grew into a mission—to harness nature’s most
-            abundant resources, wind and sunlight, to power a brighter tomorrow.
+            VN Solar specializes in comprehensive solar solutions tailored for
+            both residential, commercial and agriculture.
           </p>
           <p className="text-sm text-gray-300">
-            123 Solar Drive, Suite 200 Los Angeles, CA, 90001
+            A-03, Near ASHA LIBRARY, RMS Colony, Tagore Nagar, Raipur,
+            Chhattisgarh 492001
           </p>
 
           {/* Social Icons - Left */}
@@ -47,11 +47,11 @@ const Footer = () => {
           <h3 className="font-semibold mb-3">Contact</h3>
           <div className="flex items-center gap-2 text-sm text-gray-300 mb-2">
             <MdEmail className="text-lg" />
-            <span>info@SVN Solar.com</span>
+            <span>support@vnsolar.in</span>
           </div>
           <div className="flex items-center gap-2 text-sm text-gray-300">
             <MdPhone className="text-lg" />
-            <span>+1 (123) 456-7890</span>
+            <span>+91-9685190305,</span> <span>9424230496</span>
           </div>
         </div>
 
@@ -72,7 +72,10 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="mt-10 border-t border-gray-500 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-400">
-        <p>© 2025 SVN Solar Solar Energy – All Rights Reserved.</p>
+        <p>
+          © 2025 SVN Solar Solar Energy – All Rights Reserved. || Design and
+          Developed by <a href="https://pracharkarsolutions.com" className="text-white">pracharkarsolution</a>
+        </p>
         <p className="mt-2 md:mt-0">Privacy Policy & Term of Use</p>
       </div>
     </footer>
